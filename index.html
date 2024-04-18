@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation with Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">DOM Manipulation with Form</h1>
+    <p id="description"> form  using HTML, CSS and Javascript. It uses DOM Manipulation  user input in table</p>
+    <div class="container">
+        <form id="form">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" placeholder="Enter your first name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" placeholder="Enter your last name" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" placeholder="Enter your address" required></textarea>
+
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" placeholder="Enter your pincode" required>
+
+                <label>Gender:</label>
+                <div style="display: inline-block; padding: 8px;">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div style="display: inline-block; padding: 8px;">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <br>
+                <br>
+
+                <div class="food_choice">
+                    <label for="food">Choice of Food:</label>
+                    <div style="display: inline-block; padding: 8px;">
+                        <input type="checkbox" id="food1" name="food1" value="vegBiriyani">
+                        <label for="food1"> veg Biriyani</label>
+                    </div>
+                    <div style="display: inline-block; padding: 8px;">
+                        <input type="checkbox" id="food2" name="food2" value="idly">
+                        <label for="food2">idly</label>
+                    </div>
+                    <div style="display: inline-block; padding: 8px;">
+                        <input type="checkbox" id="food3" name="food3" value="Dhosa">
+                        <label for="food3">Dhosa</label>
+                    </div>
+                    <div style="display: inline-block; padding: 8px;">
+                        <input type="checkbox" id="food4" name="food4" value="Sambarvada">
+                        <label for="food4">Sambar vada</label>
+                    </div>
+                    <div style="display: inline-block; padding: 8px;">
+                        <input type="checkbox" id="food5" name="food5" value="pongal">
+                        <label for="food5">pongal</label>
+                    </div>
+                </div>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state" required><br><br>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country" required><br><br>
+
+
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+        <div id="tableContainer">
+            <h2>Table</h2>
+            <table id="myTable" class="table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>Pincode</th>
+                        <th>Gender</th>
+                        <th>Food</th>
+                        <th>State</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
